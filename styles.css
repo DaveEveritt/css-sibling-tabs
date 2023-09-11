@@ -1,0 +1,91 @@
+.hideme {
+  display: none;
+}
+
+.tab_container {
+  width: 100%;
+  min-height: 275px;
+}
+.tab_container section {
+  position: absolute;
+  display: none;
+  clear: both;
+}
+
+/* set the first link's background and show its div on page load */
+.tabs a:first-child {
+  background: var(--cardinalDark);
+  opacity: 1;
+  box-shadow: none;
+}
+.tab_content:first-of-type {
+  background: var(--cardinalDark);
+  display: contents;
+}
+
+/* reset the first link's background and hide its div when an ID exists */
+:target ~ nav [href="#summary"] {
+  background: var(--cardinalDark);
+  opacity: .7;
+  box-shadow: inset 0px 2px 2px 0px rgba(10, 10, 10, 0.5);
+}
+:target ~ .tab_container #summarydiv {
+  display: none;
+}
+
+/* set the targeted link's background */
+#summary:target ~ nav [href="#summary"],
+#details:target ~ nav [href="#details"],
+#rulers:target ~ nav [href="#rulers"],
+#decans:target ~ nav [href="#decans"] {
+  background: var(--cardinalDark);
+  opacity: 1;
+  box-shadow: none;
+}
+/* set the targeted link div's background and show its div */
+#summary:target ~ .tab_container #summarydiv,
+#details:target ~ .tab_container #detailsdiv,
+#rulers:target ~ .tab_container #rulersdiv,
+#decans:target ~ .tab_container #decansdiv {
+  background: #fff;
+  display: contents;
+}
+
+/* set the hashed/targeted link's background and show its div */
+
+/* #summary:target ~ nav [href="#summary"],
+#summary:target ~ .tab_container #summarydiv {
+  background: #fff;
+  display: block;
+}
+#details:target ~ nav [href="#details"],
+#details:target ~ .tab_container #detailsdiv {
+  background: #fff;
+  display: block;
+}
+#rulers:target ~ nav [href="#rulers"],
+#rulers:target ~ .tab_container #rulersdiv {
+  background: #fff;
+  display: block;
+}
+#decans:target ~ nav [href="#decans"],
+#decans:target ~ .tab_container #decansdiv {
+  background: #fff;
+  display: block;
+} */
+
+/* FROM EA */
+
+/* .tabs a:hover {
+  opacity: 0.85;
+  color: var(--lightTone);
+}
+.tabs a.active {
+  color: var(--lightTone);
+  opacity: 1;
+  box-shadow: none;
+}
+.tabs a.active:hover {
+  text-decoration: none;
+}
+ */
