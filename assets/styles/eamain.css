@@ -21,19 +21,16 @@ main a:hover { color: var(--lightBlue); }
 p, li, dd { letter-spacing: 0.015em; word-spacing: 0.02em; }
 
 /* NOTE ~ not + DO FOR RAYS TOO */
-/* .cardinal, .cardinal + .tabs a, .modetable th:first-child, */
 .cardinal, .cardinal ~ .tabs a, .modetable th:first-child,
-.ray1, .ray1 + .tabs a { background: var(--cardinalDark); }
-/* .fixed, .fixed + .tabs a, .modetable th:nth-of-type(2), */
+.ray1, .ray1 ~ .tabs a { background: var(--cardinalDark); }
 .fixed, .fixed ~ .tabs a, .modetable th:nth-of-type(2),
-.ray2, .ray2 + .tabs a { background: var(--fixedDark); }
-/* .mutable, .mutable + .tabs a, .modetable th:last-child, */
+.ray2, .ray2 ~ .tabs a { background: var(--fixedDark); }
 .mutable, .mutable ~ .tabs a, .modetable th:last-child,
-.ray3, .ray3 + .tabs a { background: var(--mutableDark); }
-.ray4, .ray4 + .tabs a { background: var(--ray4exo); }
-.ray5, .ray5 + .tabs a { background: var(--ray5eso); }
-.ray6, .ray6 + .tabs a { background: var(--ray6exo); }
-.ray7, .ray7 + .tabs a { background: var(--ray7eso); }
+.ray3, .ray3 ~ .tabs a { background: var(--mutableDark); }
+.ray4, .ray4 ~ .tabs a { background: var(--ray4exo); }
+.ray5, .ray5 ~ .tabs a { background: var(--ray5eso); }
+.ray6, .ray6 ~ .tabs a { background: var(--ray6exo); }
+.ray7, .ray7 ~ .tabs a { background: var(--ray7eso); }
  /* makes text white against mode backgrounds: */
 .modetable th:first-child,
 .modetable th:nth-of-type(2),

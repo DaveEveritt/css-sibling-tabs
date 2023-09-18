@@ -1,13 +1,6 @@
-.hideme {
-  display: none;
-}
-
-.tab_container {
-  min-height: 275px;
-}
+.hideme,
 .tab_container section {
-  position: absolute;
-  display: none;
+    display: none;
 }
 
 /* set the first link's background and show its div on page load */
