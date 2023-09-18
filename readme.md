@@ -4,5 +4,5 @@ How to create highlighted tabs on a single page, with tab-specific URLs.
 
 ## to do
 
-- [ ] try alternatives to `display: contents;`
-- [ ] make tab sections generic
+- [ ] finish making tab sections generic
+- [ ] collect all `.cardinal`-specific selectors

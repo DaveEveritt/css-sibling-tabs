@@ -445,8 +445,8 @@ figure + section h2:first-child { /* tables on tabbed pages */
   text-decoration: none;
   transition: all 0.4s;
 }
-h1.ray4 + .tabs a:link,
-h1.ray4 + .tabs a:visited {
+.ray4 ~ .tabs a:link,
+.ray4 ~ .tabs a:visited {
   color: var(--midTone);
 }
 .tabs a:hover {
@@ -760,13 +760,6 @@ blockquote small:last-child {
 }
 main blockquote + .qualities {
   margin-top: 1em;
-}
-
-/* NOT~E */
-/* ray keywords */
-#summarydiv h2 + p,
-#summary h2 + p {
-  font-size: 1.2em;
 }
 
 /* ----- FOOTER ----- */

@@ -6,41 +6,49 @@
 /* set the first link's background and show its div on page load */
 .tabs a:first-child,
 .tab_content:first-of-type {
-  background: var(--cardinalDark);
   opacity: 1;
   box-shadow: none;
 }
+.cardinal ~ .tabs a:first-child,
+.cardinal ~ .tab_content:first-of-type,
+:target ~ .cardinal ~ .tabs a:first-child {
+  /* reset the first tab's background when its div is targeted */
+  background: var(--cardinalDark);
+}
 .tab_content:first-of-type {
-  display: contents;
+  display: block;
+  width: 100%;
 }
 
-/* reset the first link's background and hide its div when an ID exists */
-:target ~ nav [href="#summary"] {
-  background: var(--cardinalDark);
+/* reset the first link style and hide its div when ID is targeted */
+:target ~ .tabs a:first-child {
   opacity: .7;
   box-shadow: inset 0px 2px 2px 0px rgba(10, 10, 10, 0.5);
 }
 :target ~ .tab_container #div1 {
   display: none;
 }
-:target ~ nav [href="#summary"]:hover {
+:target ~ .tabs a:first-of-type:hover {
   opacity: .8;
 }
 
-/* set the targeted link's background */
-#summary:target ~ nav [href="#summary"],
-#details:target ~ nav [href="#details"],
-#rulers:target ~ nav [href="#rulers"],
-#decans:target ~ nav [href="#decans"] {
+/* set the targeted link tab's background */
+#summary:target ~ .tabs [href="#summary"],
+#details:target ~ .tabs [href="#details"],
+#rulers:target ~ .tabs [href="#rulers"],
+#decans:target ~ .tabs [href="#decans"] {
   background: var(--cardinalDark);
   opacity: 1;
   box-shadow: none;
 }
 /* set the targeted link div's background and show its div */
+
 #summary:target ~ .tab_container #div1,
 #details:target ~ .tab_container #div2,
 #rulers:target ~ .tab_container #div3,
 #decans:target ~ .tab_container #div4 {
+
+/* :target ~ .tab_container [href^='#div'] { */
   background: inherit;
   display: block;
   width: 100%;
