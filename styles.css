@@ -17,7 +17,7 @@
 }
 
 /* specify correct default background for first tab, and its div when targeted: */
-.cardinal ~ .tabs a:first-child,
+/* .cardinal ~ .tabs a:first-child,
 .hideme:target ~ .cardinal ~ .tabs a {
   background: var(--cardinalDark);
 }
@@ -28,7 +28,7 @@
 .mutable ~ .tabs a:first-child,
 .hideme:target ~ .mutable ~ .tabs a {
   background: var(--mutableDark);
-}
+} */
 
 /* if not targeted, un-highlight first tab style… */
 :target ~ .tabs a:first-child {
