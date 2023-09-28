@@ -36,7 +36,7 @@
   box-shadow: inset 0px 2px 2px 0px rgba(10, 10, 10, 0.5);
 }
 /* …and hide its div */
-:target ~ .tab_container #div1 {
+:target ~ .tab_container #section1 {
   display: none;
 }
 /* but allow hover */
@@ -54,10 +54,10 @@
 }
 
 /* …and set the targeted link div background, and show its div */
-.hideme:nth-of-type(1):target ~ .tab_container #div1,
-.hideme:nth-of-type(2):target ~ .tab_container #div2,
-.hideme:nth-of-type(3):target ~ .tab_container #div3,
-.hideme:nth-of-type(4):target ~ .tab_container #div4 {
+.hideme:nth-of-type(1):target ~ .tab_container #section1,
+.hideme:nth-of-type(2):target ~ .tab_container #section2,
+.hideme:nth-of-type(3):target ~ .tab_container #section3,
+.hideme:nth-of-type(4):target ~ .tab_container #section4 {
   background: inherit;
   display: block;
   width: 100%;
