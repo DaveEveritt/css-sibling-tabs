@@ -2,7 +2,7 @@
 
 How to create highlighted tabs on a single page, with tab-specific URLs.
 
-## to do
+## to do GENERIC
 
-- [ ] finish making tab sections generic
-- [ ] collect all `.cardinal`-specific selectors
+- [ ] make generic
+- [ ] generic: remove section IDs
