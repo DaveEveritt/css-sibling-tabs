@@ -6,3 +6,5 @@ How to create highlighted tabs on a single page, with tab-specific URLs.
 
 - [ ] make generic
 - [ ] generic: remove section IDs
+- [ ] fix in-page ID jumps (e.g. planets: rulerships/dignities)
+
