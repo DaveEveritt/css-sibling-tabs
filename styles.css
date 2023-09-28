@@ -1,3 +1,5 @@
+/* CSS tabs */
+
 .hideme,
 .tab_container section {
     display: none;
@@ -9,7 +11,7 @@
   opacity: 1;
   box-shadow: none;
 }
-/* set default background for first tab, and its div when targeted: */
+/* specify correct default background for first tab, and its div when targeted: */
 .cardinal ~ .tabs a:first-child,
 .hideme:target ~ .cardinal ~ .tabs a {
   background: var(--cardinalDark);
@@ -50,3 +52,4 @@
   display: block;
   width: 100%;
 }
+/* end CSS tabs */
