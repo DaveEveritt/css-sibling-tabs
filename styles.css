@@ -5,20 +5,29 @@
     display: none;
 }
 
-/* set the first link's background and show its div on page load */
+/* set the first link's style and show its div on page load */
 .tabs a:first-child,
 .tab_content:first-of-type {
   opacity: 1;
   box-shadow: none;
 }
+.tab_content:first-of-type {
+  display: block;
+  width: 100%;
+}
+
 /* specify correct default background for first tab, and its div when targeted: */
 .cardinal ~ .tabs a:first-child,
 .hideme:target ~ .cardinal ~ .tabs a {
   background: var(--cardinalDark);
 }
-.tab_content:first-of-type {
-  display: block;
-  width: 100%;
+.fixed ~ .tabs a:first-child,
+.hideme:target ~ .fixed ~ .tabs a {
+  background: var(--fixedDark);
+}
+.mutable ~ .tabs a:first-child,
+.hideme:target ~ .mutable ~ .tabs a {
+  background: var(--mutableDark);
 }
 
 /* if not targeted, un-highlight first tab style… */
@@ -30,11 +39,12 @@
 :target ~ .tab_container #div1 {
   display: none;
 }
+/* but allow hover */
 :target ~ .tabs a:first-of-type:hover {
   opacity: .8;
 }
 
-/* highlight the currentl link tab  */
+/* highlight the currentl link tab… */
 .hideme:nth-of-type(1):target ~ .tabs a:nth-of-type(1),
 .hideme:nth-of-type(2):target ~ .tabs a:nth-of-type(2),
 .hideme:nth-of-type(3):target ~ .tabs a:nth-of-type(3),
@@ -43,7 +53,7 @@
   box-shadow: none;
 }
 
-/* set the targeted link div's background and show its div */
+/* …and set the targeted link div background, and show its div */
 .hideme:nth-of-type(1):target ~ .tab_container #div1,
 .hideme:nth-of-type(2):target ~ .tab_container #div2,
 .hideme:nth-of-type(3):target ~ .tab_container #div3,
