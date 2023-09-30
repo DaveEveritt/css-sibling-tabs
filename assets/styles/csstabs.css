@@ -21,27 +21,20 @@
 .hideme:target ~ .cardinal ~ .tabs a {
   background: var(--cardinalDark);
 }
-.fixed ~ .tabs a:first-child,
-.hideme:target ~ .fixed ~ .tabs a {
-  background: var(--fixedDark);
-}
-.mutable ~ .tabs a:first-child,
-.hideme:target ~ .mutable ~ .tabs a {
-  background: var(--mutableDark);
-} */
+*/
 
 /* if not targeted, un-highlight first tab style… */
 :target ~ .tabs a:first-child {
   opacity: .7;
   box-shadow: inset 0px 2px 2px 0px rgba(10, 10, 10, 0.5);
 }
-/* …and hide its div */
-:target ~ .tab_container section:nth-of-type(1) {
-  display: none;
-}
 /* but allow hover */
 :target ~ .tabs a:first-of-type:hover {
   opacity: .8;
+}
+/* …and hide its div */
+:target ~ .tab_container section:nth-of-type(1) {
+  display: none;
 }
 
 /* highlight the currentl link tab… */
