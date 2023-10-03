@@ -1,12 +1,13 @@
 # CSS bookmark-able highlighted tabs
 
-How to create highlighted tabs on a single page, with tab-specific URLs.
+How to create highlighted tabs with URLs on a single page (CSS), with in-section ID jump links (JS).
 
 ## to do GENERIC
 
-- [ ] make generic
+- [ ] generic: make 'planet' index.html
+- [ ] generic: remove content
+- [ ] generic: make generic styles
 - [ ] generic: remove section IDs
-- [ ] fix in-page ID jumps (e.g. planets: rulerships/dignities)
 
 ## temp
 
