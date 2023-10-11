@@ -11,151 +11,156 @@
 <body>
   <div id="container" class="tabbed">
 
-    <h1 class="ray1">Main Heading</h1>
+    <h1 class="ray1">CSS tabs with JS jump links</h1>
 
-    <span id="summary" class="hideme"></span>
-    <span id="overview" class="hideme"></span>
-    <span id="rulerships" class="hideme"></span>
-    <span id="dignities" class="hideme"></span>
+    <span id="section01" class="hideme"></span>
+    <span id="section02" class="hideme"></span>
+    <span id="section03" class="hideme"></span>
+    <span id="section04" class="hideme"></span>
 
     <nav class="tabs" aria-label="page tabs">
-      <a href="#summary">Section 1</a>
-      <a href="#overview">Section 2</a>
-      <a href="#rulerships">Section 3</a>
-      <a href="#dignities">Section 4</a>
+      <a href="#section01">Section 1</a>
+      <a href="#section02">Section 2</a>
+      <a href="#section03">Section 3</a>
+      <a href="#section04">Section 4</a>
     </nav>
 
     <main class="tab_container ray">
 
       <!-- SECTION 1 -->
 
-      <section id="summary" class="tab_content">
+      <section id="section01" class="tab_content">
 
-        <h2>Section 1</h2>
+        <h2>Section 1: Explanation</h2>
 
         <p>
-          Soy milk falafel bites miso turmeric glazed aubergine grapefruit red curry tofu noodles black bean wraps artichoke hearts farro platter summertime Thai dragon pepper overflowing berries Thai curry grenadillo cilantro lime vinaigrette banana bread cozy cinnamon oatmeal appetizer grains lemon lime minty Italian linguine puttanesca banana summer fruit salad picnic salad fresh summer. Pomegranate seasonal pesto apricot balsamic vinaigrette sesame soba noodles green grapes dragon fruit cremini mushrooms muffins avocado. Fig arugula cashew salad bite sized alfalfa sprouts cocoa bento box chickpea crust pizza ghost pepper pasta pine nuts parsley sriracha pecans fiery fruit smoky maple tempeh glaze potato chocolate açai cumin.
+          These tabs are pure HTML and CSS using IDs and sibling selectors, while the in-page jump links under <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript.
         </p>
-      </section><!-- end summary -->
+
+        <p>
+          The CSS and JS is designed to be expansible, to allow for as many tabs and related sections as required, provided they are given IDs with ordered numbers e.g. <code>#section01, #section02</code> … etc.
+        </p>
+
+        <p>
+          If you need CSS tabs that can be bookmarked, the tabs will work without JavaScript. If you also need jump links within each tab, this is handled by Javascript and <code>data-link</code> attributes.
+        </p>
+      </section>
 
       <!-- SECTION 2 -->
 
-      <section id="overview">
+      <section id="section02">
 
-        <h2 id="vulcan-general-information">Section 2</h2>
+        <h2>Section 2: more text</h2>
 
-        <p>Sweet potato frosted gingerbread bites cozy cinnamon oatmeal green onions almonds crumbled lentils apple vinaigrette seitan creamy cauliflower alfredo sauce Italian linguine puttanesca garlic sriracha noodles crunchy seaweed Bulgarian carrot overflowing mediterranean vegetables tasty. Banana bread grapefruit spiced pumpkin chili soba noodles red curry tofu noodles Thai dragon pepper simmer almond milk chai latte soup coconut lime bruschetta mint overflowing berries green bowl.</p>
+        <p>
+          Some more text. Sweet potato frosted gingerbread bites cozy cinnamon oatmeal green onions almonds crumbled lentils apple vinaigrette seitan creamy cauliflower alfredo sauce Italian linguine puttanesca garlic sriracha noodles crunchy seaweed Bulgarian carrot overflowing mediterranean vegetables tasty. Banana bread grapefruit spiced pumpkin chili soba noodles red curry tofu noodles Thai dragon pepper simmer almond milk chai latte soup coconut lime bruschetta mint overflowing berries green bowl.
+        </p>
 
-        <p>Coconut rice butternut mix seeds burritos raspberries cherry bomb pepper roasted brussel sprouts macadamia nut cookies delightful blueberry scones dragon fruit cinnamon toast summer fruit salad blood orange smash blueberry pops smoked tofu Bolivian rainbow pepper naga viper miso turmeric glazed aubergine kung pao pepper Thai sun pepper Thai apples. Sicilian pistachio pesto cookies main course blueberries salted dill vitamin glow a delicious meal roasted peanuts chocolate peanut butter dip udon noodles tahini drizzle chili golden cayenne pepper lavender lemonade plums alfalfa sprouts fiery fruit enchiladas creamy cauliflower alfredo bananas miso dressing coriander. Ginger carrot spiced juice sriracha pecans dark and stormy cremini mushrooms apricot seasonal scotch bonnet pepper cherries summertime green papaya salad rich coconut cream coconut sugar sweet potato cranberry spritzer earl grey latte cherry bomb arugula salad cinnamon street style Thai basil tacos black beans red amazon pepper coconut milk winter Caribbean red habanero raspberry fizz.</p>
+        <p>
+          Coconut rice butternut mix seeds burritos raspberries cherry bomb pepper roasted brussel sprouts macadamia nut cookies delightful blueberry scones dragon fruit cinnamon toast summer fruit salad blood orange smash blueberry pops smoked tofu Bolivian rainbow pepper naga viper miso turmeric glazed aubergine kung pao pepper Thai sun pepper Thai apples. Sicilian pistachio pesto cookies main course blueberries salted dill vitamin glow a delicious meal roasted peanuts chocolate peanut butter dip udon noodles tahini drizzle chili golden cayenne pepper lavender lemonade plums alfalfa sprouts fiery fruit enchiladas creamy cauliflower alfredo bananas miso dressing coriander. Ginger carrot spiced juice sriracha pecans dark and stormy cremini mushrooms apricot seasonal scotch bonnet pepper cherries summertime green papaya salad rich coconut cream coconut sugar sweet potato cranberry spritzer earl grey latte cherry bomb arugula salad cinnamon street style Thai basil tacos black beans red amazon pepper coconut milk winter Caribbean red habanero raspberry fizz.
+        </p>
 
       </section>
 
       <!-- SECTION 3 -->
 
-      <section id="rulerships">
+      <section id="section03">
 
-        <h2 id="vulcan-rulerships">Section 3</h2>
+        <h2 id="section03top">Section 3: text with jump links</h2>
 
         <ul>
-          
-          <li class="nowrap"><strong>Orthodox:</strong>
-            none
-          </li>
-        
-          <li class="nowrap"><strong>Esoteric:</strong>
-            <a data-link="esoteric-taurus" href="#rulerships">Taurus</a>
-            <a data-link="esoteric-virgo" href="#rulerships">Virgo</a>
-          </li>
-        
-          <li class="nowrap"><strong>Hierarchical:</strong>
-            <a data-link="hierarchical-taurus" href="#rulerships">Taurus</a>
-          </li>
-        
+          <li><a data-link="section03_jump01" href="#section03">Subsection 01</a></li>
+          <li><a data-link="section03_jump02" href="#section03">Subsection 02</a></li>
+          <li><a data-link="section03_jump03" href="#section03">Subsection 03</a></li>
         </ul>
 
-        <p>Dill appetizer rich coconut cream tomato and basil crispy raspberry fizz sandwiches salty seitan salad roasted peanuts potato hummus cumin hummus falafel bowl pine nuts dark chocolate ginger carrot spiced juice cilantro lime vinaigrette shiitake mushrooms homemade balsamic. Overflowing coconut sugar almond milk coriander burritos lemonade zest strawberries peanut butter banana bread ghost pepper eating together four-layer. Walnut pesto tart black bean chili dip orange earl grey latte smoked tofu Mexican fiesta street style Thai basil tacos matcha chocolate peanut butter dip pineapple salsa creamiest balsamic vinaigrette crumbled lentils avocado basil pesto Thai curry Sicilian pistachio pesto red amazon pepper green grapes morning smoothie bowl delightful blueberry scones chickpea crust pizza cinnamon vegan.</p>
+        <p>
+          There are three linked subsections on this page. You can add as many subsections as you like, just maintain the ID and link naming convention and match the IDs to the <code>datalink</code> attributes, which the JavaScript collects for the jump links.
+        </p>
 
-        <h3 id="orthodox-none" class="toplinkheader">Orthodox: none <a data-link="vulcan-rulerships" href="#rulerships">⇧</a></h3>
+        <h3 id="section03_jump01" class="toplinkheader">Subesection 01 <a data-link="section03top" href="#section03">⇧</a></h3>
 
-        <p>Basmati ultra creamy avocado pesto springtime strawberry sparkling pomegranate punch tofu cherry bomb enchiladas edamame apricot mushroom risotto fresh butternut mix Thai dragon pepper pasta alfalfa sprouts strawberry mango smoothie sweet potato cookies red grapes instant pot coconut milk couscous. Coconut soba noodles artichoke hearts pomegranate summer fruit salad cremini mushrooms portobello mushrooms spiced pumpkin chili sweet potato black bean burrito ginger tofu farro platter Chinese five-spice powder udon noodles elderberry sleepy morning tea vine tomatoes green pepper cherries second course lemon apples hearts of palm plums coconut rice cozy cinnamon oatmeal crunchy seaweed basil.</p>
+        <p>
+          Falafel bites double dark chocolate bite sized bento box tahini drizzle shallots red pepper mediterranean luxury bowl leek Bulgarian carrot lemongrass kale casserole heat macadamia nut cookies kung pao pepper chocolate cookie green bowl red curry tofu noodles lime mango crisp dessert Thai super chili. Cauliflower ginger lemongrass agave green tea Malaysian fig arugula cashew salad lemon red lentil soup sriracha pecans hazelnut shiitake asian pear mint blackberries grapefruit creamy cauliflower alfredo overflowing berries summertime cayenne tasty cilantro.
+        </p>
 
-        <h3 id="esoteric-taurus" class="toplinkheader">Esoteric: Taurus <a data-link="vulcan-rulerships" href="#rulerships">⇧</a></h3>
+        <h3 id="section03_jump02" class="toplinkheader">Subsection 02 <a data-link="section03top" href="#section03">⇧</a></h3>
 
-        <p>Falafel bites double dark chocolate bite sized bento box tahini drizzle shallots red pepper mediterranean luxury bowl leek Bulgarian carrot lemongrass kale casserole heat macadamia nut cookies kung pao pepper chocolate cookie green bowl red curry tofu noodles lime mango crisp dessert Thai super chili. Cauliflower ginger lemongrass agave green tea Malaysian fig arugula cashew salad lemon red lentil soup sriracha pecans hazelnut shiitake asian pear mint blackberries grapefruit creamy cauliflower alfredo overflowing berries summertime cayenne tasty cilantro.</p>
+        <p>
+          Ginger carrot spiced juice sriracha pecans dark and stormy cremini mushrooms apricot seasonal scotch bonnet pepper cherries summertime green papaya salad rich coconut cream coconut sugar sweet potato cranberry spritzer earl grey latte cherry bomb arugula salad cinnamon street style Thai basil tacos black beans red amazon pepper coconut milk winter Caribbean red habanero raspberry fizz.
+        </p>
 
-        <h3 id="esoteric-virgo" class="toplinkheader">Esoteric: Virgo <a data-link="vulcan-rulerships" href="#rulerships">⇧</a></h3>
+        <h3 id="section03_jump03" class="toplinkheader">Subsection 03 <a data-link="section03top" href="#section03">⇧</a></h3>
 
-        <p>The esoteric philosophy drawn upon in Alice Bailey’s writing holds that there are three phases of our solar system, under the three rays of aspect. In order, the first phase under Ray 3 is past, we are currently in the second phase with the Sun transmitting Ray 2 energy (hence it’s allocation to Ray 2), and the third phase under Ray 1 is yet to come. The idea here being that the creative power of first ray energy can not yet be expressed in general human culture, yet it still plays a crucial role our individual psychological growth.</p>
-
-        <h3 id="hierarchical-taurus" class="toplinkheader">Hierarchical: Taurus <a data-link="vulcan-rulerships" href="#rulerships">⇧</a></h3>
-
-        <p>Refreshing cucumber splash oranges chili pepper dragon fruit Thai sun pepper mediterranean vegetables mint lime taco salsa broccoli vitamin glow peach strawberry mango Thai mangos crispy iceberg lettuce naga viper chilies cherry paprika spring almond milk chai latte thyme apple vinaigrette main course bruschetta picnic salad summer veggie burgers maple orange tempeh. Habanero golden spiced peppermint blast seeds smoky maple tempeh glaze hearty mocha chocolate roasted butternut squash winter strawberry spinach salad banana bread tempeh..</p>
+        <p>
+          Refreshing cucumber splash oranges chili pepper dragon fruit Thai sun pepper mediterranean vegetables mint lime taco salsa broccoli vitamin glow peach strawberry mango Thai mangos crispy iceberg lettuce naga viper chilies cherry paprika spring almond milk chai latte thyme apple vinaigrette main course bruschetta picnic salad summer veggie burgers maple orange tempeh. Habanero golden spiced peppermint blast seeds smoky maple tempeh glaze hearty mocha chocolate roasted butternut squash winter strawberry spinach salad banana bread tempeh.
+        </p>
 
       </section>
 
       <!-- SECTION 4 -->
 
-      <section id="dignities">
+      <section id="section04">
 
-        <h2 id="vulcan-dignities">Section 4</h2>
+        <h2 id="section04top">Section 4: two subsections with jump links</h2>
 
+        <p class="nomarginbottom"><strong>Subsection One:</strong></p>
         <ul class="nospacetop">
-          <li class="nowrap"><strong>Exaltation:</strong>
-            <a data-link="exaltation-in-aries" href="#dignities">Aries</a>
-            <a data-link="exaltation-in-taurus" href="#dignities">Taurus</a>
-          </li>
-          <li class="nowrap"><strong>Fall:</strong>
-              <a data-link="fall-in-libra" href="#dignities">Libra</a>
-              <a data-link="fall-in-scorpio" href="#dignities">Scorpio</a>
-              <a data-link="fall-in-pisces" href="#dignities">Pisces</a>
-          </li>
-          <li class="nowrap"><strong>Detriment:</strong>
-            <a data-link="detriment-in-capricorn" href="#dignities">Capricorn</a>
-            <a data-link="detriment-in-aquarius" href="#dignities">Aquarius</a>
+          <li><a data-link="section04_jump01" href="#section04">Subheading One</a></li>
+          <li><a data-link="section04_jump02" href="#section04">Subheading Two</a></li>
+        </ul>
+        
+        <p class="nomarginbottom"><strong>Subsection Two:</strong></p>
+        <ul class="nospacetop">
+          <li><a data-link="section04_jump03" href="#section04">Subheading One</a></li>
+          <li><a data-link="section04_jump04" href="#section04">Subheading Two</a></li>
+          <li><a data-link="section04_jump05" href="#section04">Subheading Three</a></li>
           </li>
         </ul>
 
-        <p>Falafel bites double dark chocolate bite sized bento box tahini drizzle shallots red pepper mediterranean luxury bowl leek Bulgarian carrot lemongrass kale casserole heat macadamia nut cookies kung pao pepper chocolate cookie green bowl red curry tofu noodles lime mango crisp dessert Thai super chili. Cauliflower ginger lemongrass agave green tea Malaysian fig arugula cashew salad lemon red lentil soup sriracha pecans hazelnut shiitake asian pear mint blackberries grapefruit creamy cauliflower alfredo overflowing berries summertime cayenne tasty cilantro.</p>
+        <p>
+          A section with subsections and jump links to multiple subheadings. If you follow the ID and link naming convention you can add as many as you like without changing the CSS or JS.
+        </p>
 
-        <h3 id="exaltation-in-aries" class="toplinkheader">Exaltation in Aries <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
+        <h3>Subsection One</h3>
+        
+        <h4 id="section04_jump01" class="toplinkheader">Subsection One, Subheading One <a data-link="section04top" href="#section04">⇧</a></h4>
+        
+        <p>A
+          vocado dressing drizzle jalapeño candy cane winter seasonal with Caribbean red habanero kimchi black beans chocolate garlic sriracha noodles guacamole fiery fruit Italian pepperoncini comforting pumpkin spice latte peaches. Pinch of yum zesty tofu pad thai edamame hummus one bowl Bolivian rainbow pepper chia seeds Thai basil curry hemp seeds peppermint entree Italian linguine puttanesca lavender lemonade spicy.
+        </p>
+        
+        <h4 id="section04_jump02" class="toplinkheader">Subsection One, Subheading Two <a data-link="section04top" href="#section04">⇧</a></h4>
+        
+        <p>
+          Chai tea quinoa flatbread miso dressing samosa almonds lingonberry blueberries parsley cool crunchy onion pesto shaved almonds salted golden cayenne pepper creamy cauliflower alfredo sauce.
+        </p>
+        
+        <h3>Subsection Two</h3>
 
-        <p>Avocado dressing drizzle jalapeño candy cane winter seasonal with Caribbean red habanero kimchi black beans chocolate garlic sriracha noodles guacamole fiery fruit Italian pepperoncini comforting pumpkin spice latte peaches. Pinch of yum zesty tofu pad thai edamame hummus one bowl Bolivian rainbow pepper chia seeds Thai basil curry hemp seeds peppermint entree Italian linguine puttanesca lavender lemonade spicy.</p>
-
-        <h3 id="exaltation-in-taurus" class="toplinkheader">Exaltation in Taurus <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
-
-        <p>Chai tea quinoa flatbread miso dressing samosa almonds lingonberry blueberries parsley cool crunchy onion pesto shaved almonds salted golden cayenne pepper creamy cauliflower alfredo sauce.</p>
-
-        <h3 id="fall-in-libra" class="toplinkheader">Fall in Libra <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
-
-        <p>Fig arugula cashew salad falafel bites balsamic vinaigrette basil Indian spiced cashew fruit smash pinch of yum chili pepper peach strawberry mango pasta kimchi cocoa green tea lime cilantro. Lemon red lentil soup heat strawberry mango smoothie cauliflower paprika Southern Italian casserole onion chocolate cookie mushroom risotto hummus mocha chocolate açai Mexican fiesta bite sized pumpkin parsley grenadillo veggie burgers.</p>
-
-        <h3 id="fall-in-scorpio" class="toplinkheader">Fall in Scorpio <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
-
-        <p>Ultimate summer crispy iceberg lettuce matcha eating together sleepy morning tea refreshing cucumber splash jalapeño blueberry chia seed jam cool almond milk tomato and basil couscous double dark chocolate.</p>
-
-        <h3 id="fall-in-pisces" class="toplinkheader">Fall in Pisces <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
-
-        <p>Green pepper candy cane winter lemon lime minty spring blackberries peanut butter crunch artichoke hearts cumin banh mi salad rolls sandwiches red grapes appetizer bento box four-layer black bean chili dip Thai super chili.</p>
-
-        <h3 id="detriment-in-capricorn" class="toplinkheader">Detriment in Capricorn <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
-
-        <p>Thai curry lime mango crisp hazelnut shiitake citrusy muffins lentils quinoa flatbread lemongrass walnut mushroom tart crispy fall vine tomatoes strawberry spinach salad picnic salad.</p>
-
-        <h3 id="detriment-in-aquarius" class="toplinkheader">Detriment in Aquarius <a data-link="vulcan-dignities" href="#dignities">⇧</a></h3>
-
-        <p>Pesto peppermint strawberries mangos hearty farro platter guacamole second course maple orange tempeh lemonade zest Chinese five-spice powder lychee kale caesar salad.</p>
-
+        <h4 id="section04_jump03" class="toplinkheader">Subsection Two, Subheading One <a data-link="section04top" href="#section04">⇧</a></h4>
+        
+        <p>
+          Fig arugula cashew salad falafel bites balsamic vinaigrette basil Indian spiced cashew fruit smash pinch of yum chili pepper peach strawberry mango pasta kimchi cocoa green tea lime cilantro. Lemon red lentil soup heat strawberry mango smoothie cauliflower paprika Southern Italian casserole onion chocolate cookie mushroom risotto hummus mocha chocolate açai Mexican fiesta bite sized pumpkin parsley grenadillo veggie burgers.
+        </p>
+        
+        <h4 id="section04_jump04" class="toplinkheader">Subsection Two, Subheading Two <a data-link="section04top" href="#section04">⇧</a></h4>
+        
+        <p>
+          Ultimate summer crispy iceberg lettuce matcha eating together sleepy morning tea refreshing cucumber splash jalapeño blueberry chia seed jam cool almond milk tomato and basil couscous double dark chocolate.
+        </p>
+        
+        <h4 id="section04_jump05" class="toplinkheader">Subsection Two, Subheading Three <a data-link="section04top" href="#section04">⇧</a></h4>
+        
+        <p>
+          Green pepper candy cane winter lemon lime minty spring blackberries peanut butter crunch artichoke hearts cumin banh mi salad rolls sandwiches red grapes appetizer bento box four-layer black bean chili dip Thai super chili.
+        </p>
+        
       </section>
-      <!-- remaining tab content -->
 
     </main><!-- tab_container -->
 
   </div><!-- container -->
-
-  <footer>
-    <a href="/about/">About Esoteric Astrology</a><a href="/introduction/">Who is this for?</a><a href="/key-concepts/">Key concepts</a><a href="https://twitter.com/esoastrology"><img class="inline-graphic" alt="Twitter logo" src="/assets/images/graphics/twitter-logo.svg"></a>
-    <p class="date">Last updated: 16 July 2023</p>
-  </footer>
 
   <script src="/assets/scripts/dropdown_handler.js"></script>
   <script src="/assets/scripts/id_handler.js"></script>
