@@ -5,9 +5,10 @@ How to create highlighted tabs with URLs on a single page (CSS), with in-section
 ## to do GENERIC
 
 - [ ] generic: make 'planet' index.html
-- [ ] generic: remove content
+- [ ] generic: change section headings
+- [ ] generic: rename section IDs
+- [ ] generic: change tab text
 - [ ] generic: make generic styles
-- [ ] generic: remove section IDs
 
 ## temp
 
