@@ -48,10 +48,8 @@ h2 {
   padding: 0 12px;
   font-size: 1.25em;
 }
-h3.toplinkheader > a,
-h4.toplinkheader > a {
-  font-size: .8em;
-  font-weight: normal;
+.toplinkheader > a,
+.toplinkheader > a {
   color: var(--lightTone) !important;
 }
 h3.toplinkheader > a:hover,
