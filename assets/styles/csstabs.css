@@ -7,11 +7,11 @@
 
 /* set the first link's style and show its div on page load */
 .tabs a:first-child,
-.tab_content:first-of-type {
+.tab_container section:first-of-type {
   opacity: 1;
   box-shadow: none;
 }
-.tab_content:first-of-type {
+.tab_container section:first-of-type {
   display: block;
   width: 100%;
 }
