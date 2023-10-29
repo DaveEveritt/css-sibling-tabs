@@ -2,17 +2,15 @@
 
 How to create highlighted tabs with URLs on a single page (CSS), with in-section ID jump links (JS).
 
-## to do GENERIC
+## TO DO
 
-- [ ] generic: make 'planet' index.html
-- [ ] generic: change section headings
-- [ ] generic: rename section IDs
-- [ ] generic: change tab text
-- [ ] generic: make generic styles
+- [ ] clean up excess files
 
 ## temp
 
 <!--
+index.html is EA 'planet.html'
+
 S+R:
 a href="(#.*)+"
 a data-link="$1" href="#rulerships"
