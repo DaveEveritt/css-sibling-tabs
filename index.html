@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS tabs with in-tab jump links</title>
-  <link rel="stylesheet" type="text/css" href="/assets/styles/eavariables.css">
-  <link rel="stylesheet" type="text/css" href="/assets/styles/eamain.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/assets/styles/eamain.css"> -->
   <link rel="stylesheet" type="text/css" href="/assets/styles/csstabs.css">
 </head>
 <body>
   <!-- page container -->
   <div id="container" class="tabbed">
 
-    <h1 class="ray1">CSS tabs with JS jump links</h1>
+    <h1 class="tabs">CSS tabs with JS jump links</h1>
 
     <span id="section01" class="hideme"></span>
     <span id="section02" class="hideme"></span>
@@ -28,7 +27,7 @@
 
     <!-- tab_container -->
 
-    <main class="tab_container ray">
+    <main class="tab_container">
 
       <!-- SECTION 1 -->
 
@@ -37,15 +36,15 @@
         <h2>Section 1: Explanation</h2>
 
         <p>
-          These tabs are pure HTML and CSS using IDs and sibling selectors, while the in-page jump links under <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript.
+          These bookmarkable tabs (by ID hash appended to URL) are pure HTML and CSS using IDs and sibling selectors, while the in-page jump links under <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript.
+        </p>
+        
+        <p>
+          If you need CSS tabs that can be bookmarked, the tabs will work without JavaScript. If you also need jump links within each tab, this is handled by Javascript and <code>data-link</code> attributes.
         </p>
 
         <p>
           The CSS and JS is designed to be expansible, to allow for as many tabs and related sections as required, provided they are given IDs with ordered numbers e.g. <code>#section01, #section02</code> … etc.
-        </p>
-
-        <p>
-          If you need CSS tabs that can be bookmarked, the tabs will work without JavaScript. If you also need jump links within each tab, this is handled by Javascript and <code>data-link</code> attributes.
         </p>
       </section>
 
@@ -165,7 +164,6 @@
 
   </div><!-- end page container -->
 
-  <script src="/assets/scripts/dropdown_handler.js"></script>
   <script src="/assets/scripts/id_handler.js"></script>
 </body>
 </html>
