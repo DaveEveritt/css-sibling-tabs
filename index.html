@@ -7,9 +7,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="/assets/styles/eamain.css"> -->
   <link rel="stylesheet" type="text/css" href="assets/styles/csstabs.css">
 </head>
-<body>
-  <!-- page container -->
-  <div id="container" class="tabbed">
+<body class="tabbed">
 
     <h1 class="tabs">CSS tabs with JS jump links</h1>
 
@@ -36,11 +34,11 @@
         <h2>Section 1: Explanation</h2>
 
         <p>
-          These bookmarkable tabs (by ID hash appended to URL) are pure HTML and CSS using IDs and sibling selectors, while the in-page jump links under <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript.
+          These <strong>bookmarkable tabs</strong> (by ID hash appended to URL) are pure HTML and CSS using IDs and <em>sibling selectors</em>, while the in-page jump links under <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript.
         </p>
         
         <p>
-          If you need CSS tabs that can be bookmarked, the tabs will work without JavaScript. If you also need jump links within each tab, this is handled by Javascript and <code>data-link</code> attributes.
+          If you only need CSS tabs that can be bookmarked, these will work without JavaScript. For jump links to content within each tab, you need the Javascript which reads and uses the HTML <code>data-link</code> attributes.
         </p>
 
         <p>
@@ -55,7 +53,7 @@
         <h2>Section 2: just text here</h2>
 
         <p>
-          Tabbed sections that have no internal jump links don’t need any JavaScript, just the CSS.
+          Content in tabbed sections like this, with have no internal jump links, don’t need any JavaScript, just the CSS.
         </p>
 
         <p>
@@ -77,7 +75,7 @@
         </ul>
 
         <p>
-          Text that contains jump links to subsections within the sections needs JavaScript. There are three linked subsections on this page. You can add as many subsections as you like, if you maintain the ID and link naming convention, and match the IDs to the <code>datalink</code> attributes, which the JavaScript collects for the jump links.
+          Text that contains <em>jump links</em> to subsections within the tab content needs JavaScript. There are three linked subsections on this page. You can add as many subsections as you like, if you maintain the ID and link naming convention, and match the IDs to the <code>datalink</code> attributes, which the JavaScript collects for the jump links.
         </p>
 
         <h3 id="section03_jump01" class="toplinkheader">Subesection 01 <a data-link="section03top" href="#section03">⇧</a></h3>
@@ -106,18 +104,17 @@
 
         <h2 id="section04top">Section 4: two subsections with jump links</h2>
 
-        <p class="nomarginbottom"><strong>Subsection One:</strong></p>
-        <ul class="nospacetop">
+        <p class="nospacebottom"><strong>Subsection One:</strong></p>
+        <ul>
           <li><a data-link="section04_jump01" href="#section04">Subheading One</a></li>
           <li><a data-link="section04_jump02" href="#section04">Subheading Two</a></li>
         </ul>
         
-        <p class="nomarginbottom"><strong>Subsection Two:</strong></p>
-        <ul class="nospacetop">
+        <p class="nospacebottom"><strong>Subsection Two:</strong></p>
+        <ul>
           <li><a data-link="section04_jump03" href="#section04">Subheading One</a></li>
           <li><a data-link="section04_jump04" href="#section04">Subheading Two</a></li>
           <li><a data-link="section04_jump05" href="#section04">Subheading Three</a></li>
-          </li>
         </ul>
 
         <p>
@@ -128,8 +125,8 @@
         
         <h4 id="section04_jump01" class="toplinkheader">Subsection One, Subheading One <a data-link="section04top" href="#section04">⇧</a></h4>
         
-        <p>A
-          vocado dressing drizzle jalapeño candy cane winter seasonal with Caribbean red habanero kimchi black beans chocolate garlic sriracha noodles guacamole fiery fruit Italian pepperoncini comforting pumpkin spice latte peaches. Pinch of yum zesty tofu pad thai edamame hummus one bowl Bolivian rainbow pepper chia seeds Thai basil curry hemp seeds peppermint entree Italian linguine puttanesca lavender lemonade spicy.
+        <p>
+          Avocado dressing drizzle jalapeño candy cane winter seasonal with Caribbean red habanero kimchi black beans chocolate garlic sriracha noodles guacamole fiery fruit Italian pepperoncini comforting pumpkin spice latte peaches. Pinch of yum zesty tofu pad thai edamame hummus one bowl Bolivian rainbow pepper chia seeds Thai basil curry hemp seeds peppermint entree Italian linguine puttanesca lavender lemonade spicy.
         </p>
         
         <h4 id="section04_jump02" class="toplinkheader">Subsection One, Subheading Two <a data-link="section04top" href="#section04">⇧</a></h4>
@@ -161,8 +158,6 @@
       </section>
 
     </main><!-- end tab_container -->
-
-  </div><!-- end page container -->
 
   <script src="assets/scripts/id_handler.js"></script>
 </body>
