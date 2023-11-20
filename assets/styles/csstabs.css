@@ -43,7 +43,7 @@ a:link, a:visited {
 
 .hideme,
 .tab_container section {
-    display: none;
+  display: none;
 }
 
 /* set the first link's style and show its div on page load */
