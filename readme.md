@@ -1,7 +1,7 @@
 # CSS bookmark-able highlighted tabs
 
-How to create single-page highlighted tabs with bookmarkable URLs (CSS), with in-section ID jump links to the content of any tab (JS).
+How to create single-page highlighted tabs with bookmarkable URLs (CSS), and optional in-section jump links to content within any tab (JS).
 
-## TO DO
+If you only need CSS tabs that can be bookmarked, these will work *without* JavaScript. For jump links to content within each tab, you need the Javascript which reads and uses the HTML `data-link` attributes.
 
-- [ ] refactor CSS
+All code is extensible, you can use fewer tabs or add more, and as many sub-sections as required.
