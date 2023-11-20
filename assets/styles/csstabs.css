@@ -62,16 +62,15 @@ a:link, a:visited {
   opacity: .7;
   box-shadow: inset 0px 2px 2px 0px rgba(10, 10, 10, 0.5);
 }
-/* but allow hover */
+/* …hide its div */
+:target ~ .tab_container section:nth-of-type(1) {
+  display: none;
+}
+/* and allow hover */
 :target ~ .tabs a:first-of-type:hover,
 :target ~ .tabs a:hover,
 .tabs a:hover {
   opacity: 0.85;
-}
-  
-/* …and hide its div */
-:target ~ .tab_container section:nth-of-type(1) {
-  display: none;
 }
 
 /* highlight the currentl link tab… */
