@@ -34,15 +34,15 @@
         <h2>Section 1: Explanation</h2>
 
         <p>
-          These <strong>bookmarkable tabs</strong> (by ID hash appended to URL) are pure HTML and CSS using IDs and <em>sibling selectors</em>, while the in-page jump links under <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript.
+          These pure HTML/CSS <strong>bookmarkable tabs</strong> (by URL hash) use IDs and <em>sibling selectors</em>. The in-page jump links in <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript. [GitHub repo with code here](https://github.com/daveeveritt/css-sibling-tabs/).
         </p>
         
         <p>
-          If you only need CSS tabs that can be bookmarked, these will work without JavaScript. For jump links to content within each tab, you need the Javascript which reads and uses the HTML <code>data-link</code> attributes.
+          If you only need CSS tabs that can be bookmarked, these work without JavaScript. For jump links to content <em>within</em> each tab, you’ll also need the JavaScript to read the HTML <code>data-link</code> attributes in the subheadings.
         </p>
 
         <p>
-          The CSS and JS is designed to be expansible, to allow for as many tabs and related sections as required, provided they are given IDs with ordered numbers e.g. <code>#section01, #section02</code> … etc.
+          The code is expansible to allow for fewer or more tabs (and related sections) as required, provided they follow the naming convention for IDs with ordered numbers e.g. <code>#section01, #section02</code> … etc.
         </p>
       </section>
 
