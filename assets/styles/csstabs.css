@@ -96,7 +96,7 @@ a:link, a:visited {
 
 /* non-functional design styles: */
 .tabbed h1 {
-  margin-bottom: 0;
+  margin-bottom: -1px;
   border-bottom: 0;
   padding: .25em 12px .25em;
   color: white;
