@@ -27,14 +27,13 @@
     <main class="tab_container">
 
       <!-- SECTION 1 -->
-
       <section>
 
         <h2>Section 1: Explanation</h2>
 
         <div class="instructions">
           <p>
-            Pure HTML/CSS <strong>bookmarkable tabs</strong> (by URL hash) using IDs and <em>sibling selectors</em>. The jump links in <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> use vanilla JavaScript. <a href="https://github.com/daveeveritt/css-sibling-tabs/">GitHub repo with code here</a>.
+            Pure HTML/CSS <strong>bookmarkable tabs</strong> (by URL hash) using IDs and <em>sibling selectors</em>. The jump links in <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> use vanilla JavaScript—see <a href="#section03">tab 3</a> for instructions. <a href="https://github.com/daveeveritt/css-sibling-tabs/">GitHub repo with code here</a>.
           </p>
           
           <p>
@@ -48,7 +47,6 @@
       </section>
 
       <!-- SECTION 2 -->
-
       <section>
 
         <h2>Section 2: just text</h2>
@@ -64,10 +62,9 @@
       </section>
 
       <!-- SECTION 3 -->
-
       <section>
 
-        <h2 id="section03top">Section 3: text with jump links</h2>
+        <h2 id="top03">Section 3: text with jump links</h2>
 
         <ul>
           <li><a data-link="section03_jump01" href="#section03">Subsection 01</a></li>
@@ -77,34 +74,38 @@
 
         <div class="instructions">
           <p>
-            Text that contains <em>jump links</em> to subsections in the tab’s content needs JavaScript. In this tab there are three linked subsections. You can add as many subsections as you like if you:
+            Text that contains <em>jump links</em> to subsections within a tab’s content needs JavaScript. In this tab and <a href="#section04">tab 4</a> there are three linked subsections. You can add as many subsections as you like if you match each <code>data-link</code> attribute to its corresponding <code>ID</code>:
           </p>
-          <ul>
-            <li>maintain the ID and link naming convention</li>
-            <li>match IDs to the <code>datalink</code> attributes</li>
-          </ul>
-          <p>
-            The JavaScript collects the <code>datalink</code> attributes to load the jump links e.g. for this example (with the CSS):
-            <pre><code>&lt;h3 id="section03_jump01" class="toplinkheader">
+          <pre><code><strong>LINK to the section:</strong>
+
+&lt;li>&lt;a <strong>data-link="section03_jump01"</strong>
+            href="#section03">Subsection 01&lt;/a>
+&lt;/li>
+
+<strong>THEN in the section:</strong>
+
+&lt;h3 <strong>id="section03_jump01"</strong> class="toplinkheader">
   Subsection 01
-  &lt;a data-link="section03top"
+  &lt;a data-link="top03"
           href="#section03">⇧&lt;/a>
 &lt;/h3></code></pre>
+          <p>
+            JavaScript handles the <code>datalink</code> attributes for the jump links to each section (and back to "top03") while staying on the <strong>same tab</strong>.
           </p>
         </div>
-        <h3 id="section03_jump01" class="toplinkheader">Subsection 01 <a data-link="section03top" href="#section03">⇧</a></h3>
+        <h3 id="section03_jump01" class="toplinkheader">Subsection 01 <a data-link="top03" href="#section03">⇧</a></h3>
 
         <p>
           Falafel bites double dark chocolate bite sized bento box tahini drizzle shallots red pepper mediterranean luxury bowl leek Bulgarian carrot lemongrass kale casserole heat macadamia nut cookies kung pao pepper chocolate cookie green bowl red curry tofu noodles lime mango crisp dessert Thai super chili. Cauliflower ginger lemongrass agave green tea Malaysian fig arugula cashew salad lemon red lentil soup sriracha pecans hazelnut shiitake asian pear mint blackberries grapefruit creamy cauliflower alfredo overflowing berries summertime cayenne tasty cilantro.
         </p>
 
-        <h3 id="section03_jump02" class="toplinkheader">Subsection 02 <a data-link="section03top" href="#section03">⇧</a></h3>
+        <h3 id="section03_jump02" class="toplinkheader">Subsection 02 <a data-link="top03" href="#section03">⇧</a></h3>
 
         <p>
           Ginger carrot spiced juice sriracha pecans dark and stormy cremini mushrooms apricot seasonal scotch bonnet pepper cherries summertime green papaya salad rich coconut cream coconut sugar sweet potato cranberry spritzer earl grey latte cherry bomb arugula salad cinnamon street style Thai basil tacos black beans red amazon pepper coconut milk winter Caribbean red habanero raspberry fizz.
         </p>
 
-        <h3 id="section03_jump03" class="toplinkheader">Subsection 03 <a data-link="section03top" href="#section03">⇧</a></h3>
+        <h3 id="section03_jump03" class="toplinkheader">Subsection 03 <a data-link="top03" href="#section03">⇧</a></h3>
 
         <p>
           Refreshing cucumber splash oranges chili pepper dragon fruit Thai sun pepper mediterranean vegetables mint lime taco salsa broccoli vitamin glow peach strawberry mango Thai mangos crispy iceberg lettuce naga viper chilies cherry paprika spring almond milk chai latte thyme apple vinaigrette main course bruschetta picnic salad summer veggie burgers maple orange tempeh. Habanero golden spiced peppermint blast seeds smoky maple tempeh glaze hearty mocha chocolate roasted butternut squash winter strawberry spinach salad banana bread tempeh.
@@ -113,10 +114,9 @@
       </section>
 
       <!-- SECTION 4 -->
-
       <section>
 
-        <h2 id="section04top">Section 4: subsections with jump links</h2>
+        <h2 id="top04">Section 4: subsections with jump links</h2>
 
         <p class="nospacebottom"><strong>Subsection One:</strong></p>
         <ul>
@@ -137,13 +137,13 @@
 
         <h3>Subsection One</h3>
         
-        <h4 id="section04_jump01" class="toplinkheader">Subsection One, Subheading One <a data-link="section04top" href="#section04">⇧</a></h4>
+        <h4 id="section04_jump01" class="toplinkheader">Subsection One, Subheading One <a data-link="top04" href="#section04">⇧</a></h4>
         
         <p>
           Avocado dressing drizzle jalapeño candy cane winter seasonal with Caribbean red habanero kimchi black beans chocolate garlic sriracha noodles guacamole fiery fruit Italian pepperoncini comforting pumpkin spice latte peaches. Pinch of yum zesty tofu pad thai edamame hummus one bowl Bolivian rainbow pepper chia seeds Thai basil curry hemp seeds peppermint entree Italian linguine puttanesca lavender lemonade spicy.
         </p>
         
-        <h4 id="section04_jump02" class="toplinkheader">Subsection One, Subheading Two <a data-link="section04top" href="#section04">⇧</a></h4>
+        <h4 id="section04_jump02" class="toplinkheader">Subsection One, Subheading Two <a data-link="top04" href="#section04">⇧</a></h4>
         
         <p>
           Chai tea quinoa flatbread miso dressing samosa almonds lingonberry blueberries parsley cool crunchy onion pesto shaved almonds salted golden cayenne pepper creamy cauliflower alfredo sauce.
@@ -151,19 +151,19 @@
         
         <h3>Subsection Two</h3>
 
-        <h4 id="section04_jump03" class="toplinkheader">Subsection Two, Subheading One <a data-link="section04top" href="#section04">⇧</a></h4>
+        <h4 id="section04_jump03" class="toplinkheader">Subsection Two, Subheading One <a data-link="top04" href="#section04">⇧</a></h4>
         
         <p>
           Fig arugula cashew salad falafel bites balsamic vinaigrette basil Indian spiced cashew fruit smash pinch of yum chili pepper peach strawberry mango pasta kimchi cocoa green tea lime cilantro. Lemon red lentil soup heat strawberry mango smoothie cauliflower paprika Southern Italian casserole onion chocolate cookie mushroom risotto hummus mocha chocolate açai Mexican fiesta bite sized pumpkin parsley grenadillo veggie burgers.
         </p>
         
-        <h4 id="section04_jump04" class="toplinkheader">Subsection Two, Subheading Two <a data-link="section04top" href="#section04">⇧</a></h4>
+        <h4 id="section04_jump04" class="toplinkheader">Subsection Two, Subheading Two <a data-link="top04" href="#section04">⇧</a></h4>
         
         <p>
           Ultimate summer crispy iceberg lettuce matcha eating together sleepy morning tea refreshing cucumber splash jalapeño blueberry chia seed jam cool almond milk tomato and basil couscous double dark chocolate.
         </p>
         
-        <h4 id="section04_jump05" class="toplinkheader">Subsection Two, Subheading Three <a data-link="section04top" href="#section04">⇧</a></h4>
+        <h4 id="section04_jump05" class="toplinkheader">Subsection Two, Subheading Three <a data-link="top04" href="#section04">⇧</a></h4>
         
         <p>
           Green pepper candy cane winter lemon lime minty spring blackberries peanut butter crunch artichoke hearts cumin banh mi salad rolls sandwiches red grapes appetizer bento box four-layer black bean chili dip Thai super chili.
