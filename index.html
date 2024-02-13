@@ -34,15 +34,15 @@
         <h2>Section 1: Explanation</h2>
 
         <p>
-          These pure HTML/CSS <strong>bookmarkable tabs</strong> (by URL hash) use IDs and <em>sibling selectors</em>. The in-page jump links in <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> are handled by vanilla JavaScript. [GitHub repo with code here](https://github.com/daveeveritt/css-sibling-tabs/).
+          Pure HTML/CSS <strong>bookmarkable tabs</strong> (by URL hash) using IDs and <em>sibling selectors</em>. The jump links in <a href="#section03">tabs 3</a> and <a href="#section04">tabs 4</a> use vanilla JavaScript. <a href="https://github.com/daveeveritt/css-sibling-tabs/">GitHub repo with code here</a>.
         </p>
         
         <p>
-          If you only need CSS tabs that can be bookmarked, these work without JavaScript. For jump links to content <em>within</em> each tab, you’ll also need the JavaScript to read the HTML <code>data-link</code> attributes in the subheadings.
+          If you just need bookmarkable CSS tabs, no JavaScript is necessary. For jump links to content <em>within</em> a tab, you need the JavaScript to read the HTML <code>data-link</code> attributes in the subheadings.
         </p>
 
         <p>
-          The code is expansible to allow for fewer or more tabs (and related sections) as required, provided they follow the naming convention for IDs with ordered numbers e.g. <code>#section01, #section02</code> … etc.
+          The code is expansible and allows for fewer or more tabs (with related sections), provided these follow the <em>naming convention</em> for IDs with ordered numbers e.g. <code>#section01, #section02</code> … etc.
         </p>
       </section>
 
@@ -53,7 +53,7 @@
         <h2>Section 2: just text here</h2>
 
         <p>
-          Content in tabbed sections like this, with have no internal jump links, don’t need any JavaScript, just the CSS.
+          Content in tabbed sections like this, with no internal jump links, works with CSS, no need for JavaScript.
         </p>
 
         <p>
@@ -75,7 +75,19 @@
         </ul>
 
         <p>
-          Text that contains <em>jump links</em> to subsections within the tab content needs JavaScript. There are three linked subsections on this page. You can add as many subsections as you like, if you maintain the ID and link naming convention, and match the IDs to the <code>datalink</code> attributes, which the JavaScript collects for the jump links.
+          Text that contains <em>jump links</em> to subsections in the tab’s content needs JavaScript. In this tab there are three linked subsections. You can add as many subsections as you like if you:
+        </p>
+        <ul>
+          <li>maintain the ID and link naming convention</li>
+          <li>match IDs to the <code>datalink</code> attributes</li>
+        </ul>
+        <p>
+          The JavaScript collects the <code>datalink</code> attributes to load the jump links e.g. for this example (with the CSS):
+          <pre>
+            <code>
+              <h3 id="section03_jump01" class="toplinkheader">Subesection 01 <a data-link="section03top" href="#section03">⇧</a></h3>
+            </code>
+          </pre>
         </p>
 
         <h3 id="section03_jump01" class="toplinkheader">Subesection 01 <a data-link="section03top" href="#section03">⇧</a></h3>
@@ -118,7 +130,7 @@
         </ul>
 
         <p>
-          A section with subsections can also contain jump links to multiple subheadings. If you follow the ID and link naming convention you can add as many subsections and subheadings as you like without changing the CSS or JS.
+          A section with subsections can also contain jump links to multiple subheadings. If you follow the <strong>ID and link naming convention</strong> you can add as many subsections and subheadings as you like <em>without changing</em> the CSS or JS.
         </p>
 
         <h3>Subsection One</h3>
