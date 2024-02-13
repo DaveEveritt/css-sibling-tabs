@@ -110,11 +110,10 @@ a:link, a:visited {
 h3, h4 {
   padding: 0;
   margin-bottom: .25em;
-  color: #666;
+  color: #444;
 }
 h3 {
   font-size: 1.25em;
-  color: #333;
 }
 h4 {
   font-size: 1.15em;
@@ -149,4 +148,28 @@ h4.toplinkheader > a:hover {
 }
 ul {
   margin-top: 0;
+}
+p {
+  color: #555;
+}
+code {
+  color: #446;
+}
+.instructions {
+  font-size: 1.2em;
+  color: #000;
+  background: #eee;
+  padding: 0 1em;
+  border: 2px solid #999;
+  border-radius: 6px;
+}
+p.instructions,
+.instructions > p {
+  color: #000;
+}
+p.instructions {
+  padding: 1em;
+}
+li {
+  padding: .25em 0;
 }
