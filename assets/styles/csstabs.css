@@ -74,7 +74,8 @@ a:link, a:visited {
   opacity: 0.85;
 }
 
-/* highlight the currentl link tab… */
+/* Number of tabs set here.
+   Highlight the currentl link tab… */
 .hideme:nth-of-type(1):target ~ .tabs a:nth-of-type(1),
 .hideme:nth-of-type(2):target ~ .tabs a:nth-of-type(2),
 .hideme:nth-of-type(3):target ~ .tabs a:nth-of-type(3),
@@ -82,7 +83,7 @@ a:link, a:visited {
   opacity: 1;
   box-shadow: none;
 }
-/* …set the targeted link div background, and show its div */
+/* …set targeted link div background, and show its div */
 .hideme:nth-of-type(1):target ~ .tab_container section:nth-of-type(1),
 .hideme:nth-of-type(2):target ~ .tab_container section:nth-of-type(2),
 .hideme:nth-of-type(3):target ~ .tab_container section:nth-of-type(3),
